@@ -47,6 +47,10 @@ func init() {
 var others = []*Agent{
 	{ID: "magpie", Name: "magpie", Icon: "magpie", UA: []string{"magpie"}},
 	{ID: "curl", Name: "curl", Icon: "curl", UA: []string{"curl"}},
+	// LobeHub reaches the gateway as a provider it was pointed at, with no
+	// config magpie sets up. Its User-Agent names it, `lobehub/<version>`;
+	// drawn with its logo on the Routing and Usage pages.
+	{ID: "lobehub", Name: "LobeHub", Icon: "lobehub-color", UA: []string{"lobehub"}},
 	// PI-Desktop (vastsa/PI-Desktop) runs Pi's own library, which says
 	// "pi (…)"; given a User-Agent of its own in its provider's settings
 	// ("pi-desktop/0.1.0"), it is told apart from Pi by that name, which
